@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" type="text/css" />
+	</head>
+	<body>
+		<div id="operations">
+			<p>Size of the area:</p>
+			<div class="sliderForArea">
+				<div class="min-max">
+					<div class="min">
+						<label>Min</label>
+						<span id="min-value"></span>
+					</div>
+					<div class="max">
+						<label>Max</label>
+						<span id="max-value"></span>
+					</div>
+				</div>
+				<div class="min-max-range">
+					<input
+						type="range"
+						min="0"
+						max="8549121"
+						value="4274560"
+						class="range"
+						id="min"
+					/>
+					<input
+						type="range"
+						min="8549122"
+						max="17098242"
+						value="12823682"
+						class="range"
+						id="max"
+					/>
+				</div>
+				<br />
+				<br />
+				<input
+					type="search"
+					id="searchCountry"
+					placeholder="Enter a name of country!"
+				/>
+				<button type="button" id="btn">Search</button>
+			</div>
+			<div class="drop-down-menu">
+				<label for="language">Select order:</label>
+				<select name="order" id="order">
+					<option value="" selected="selected">Select</option>
+					<option value="descending">Descending order</option>
+					<option value="ascending">Ascending order</option>
+				</select>
+			</div>
+		</div>
+
+		<br />
+		<br />
+		<div id="divTable"></div>
+		<img src="img/loader.gif" id="imgLoader" alt="loader" hidden />
+		<script src="script.js"></script>
+	</body>
+</html>
